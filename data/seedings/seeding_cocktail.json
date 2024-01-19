@@ -1,0 +1,162 @@
+[{
+    "name": "mojito",
+    "instruction": "Réaliser la recette 'Mojito' directement dans le verre.  Placer les feuilles de menthe dans le verre, ajouter le sucre et le jus de citron vert. Piler consciencieusement afin d'exprimer l'essence de la menthe, mais sans la broyer. Ajouter le rhum blanc, remplir le verre à moitié de glaçons et compléter avec de l'eau gazeuse. Mélanger doucement et servir avec une paille.  Servir dans un verre de type 'tumbler'.  Décorer avec des feuilles de menthe fraîches et une tranche de citron",
+    "picture": "mojito.jpg",
+    "validation": true,
+    "user_id": 1
+},
+{
+    "name": "pina colada",
+    "instruction": "Réalisez la recette 'Piña Colada' au mixer.  Dans un blender (mixer), versez les ingrédients avec 5 ou 6 glaçons et mixez le tout. C'est prêt ! Versez dans le verre et dégustez. Peut aussi se réaliser au shaker si c'est juste pour une personne.  Servir dans un verre de type 'verre à vin'.  Décorer avec un morceau d'ananas et une cerise confite",
+    "picture": "pinacolada.jpg",
+    "validation": true,
+    "user_id": 1
+},
+{
+    "name": "moscow mule",
+    "instruction": "Réalisez la recette 'Moscow mule' dans un verre à mélange.  Mettre la Glace dans un grand verre. Verser les ingrédients et remuer délicatement avec la cuillère à cocktail.  Servir dans un verre de type 'tumbler'. Une tranche de citron et une feuille de menthe.",
+    "picture": "moscowmule.jpg",
+    "validation": true,
+    "user_id": 1
+},
+{
+    "name": "gin tonic",
+    "instruction": "Réalisez la recette 'Gin Tonic' directement dans le verre.  Servir dans un tumbler, sur des glaçons. Verser le gin, remplir de tonic frais et remuer doucement une seule fois.  Servir dans un verre de type 'tumbler'.  Garnissez selon les propriétés du gin, sinon une tranche ou un zeste de citron vert fera généralement l'affaire.",
+    "picture": "gintonic.jpg",
+    "validation": true,
+    "user_id": 1
+},
+{
+    "name": "bloody mary",
+    "instruction": "Réalisez la recette 'Bloody Mary' dans un verre à mélange. Agiter les ingrédients dans un verre à mélange avec des glaçons (pour refroidir sans trop diluer). Verser dans le verre, puis ajouter à convenance sel de céleri, sel et poivre.  Décorer avec une tige de céleri et optionellement, une rondelle de citron. Servir.  Servir dans un verre de type 'tumbler'. Décorer d'une branche de celeri.",
+    "picture": "bloodymary.jpg",
+    "validation": true,
+    "user_id": 1
+},
+{
+    "name": "cosmopolitain",
+    "instruction": "Réalisez la recette 'Cosmopolitan' au shaker. Frapper les ingrédients avec des glaçons et verser dans le verre en filtrant. Servir dans un verre de type 'verre à martini'. Eventuellement une rondelle de citron sur le bord du verre.",
+    "picture": "cosmopolitain.jpg",
+    "validation": true,
+    "user_id": 1
+},
+{
+    "name": "blue lagoon",
+    "instruction": "Réalisez la recette 'Blue Lagoon' au shaker. Pressez le jus d'un demi-citron, ajoutez dans le shaker avec les autres ingrédients et des glaçons. Frappez puis versez dans le verre en filtrant. Afin qu'il soit plus frais et léger, remplissez auparavant le verre de glace pilée. Servir dans un verre de type 'verre à martini'. Un long zeste de citron vert.",
+    "picture": "bluelagoon.jpg",
+    "validation": true,
+    "user_id": 1
+},
+{
+    "name": "margarita",
+    "instruction": "Réalisez la recette 'Margarita' au shaker. Frapper les ingrédients au shaker avec des glaçons puis verser dans le verre givré au citron et au sel fin... Pour givrer facilement le verre, passer le citron sur le bord du verre et tremper les bords dans le sel. Servir dans un verre de type 'verre à margarita'. Décorer d'une tranche de citron vert.",
+    "picture": "margarita.jpg",
+    "validation": true,
+    "user_id": 1
+},
+{
+    "name": "tequila sunrise",
+    "instruction": "Réalisez la recette 'Tequila Sunrise' directement dans le verre. Verser la tequila sur des glaçons dans le verre. Compléter avec le jus d'orange et remuer. Versez doucement le sirop de grenadine dans le verre pour que celui-ci tombe au fond. Donnez alors un petit coup de cuillère pour affiner le dégradé si nécessaire. Servir dans un verre de type 'tumbler'. Décorer d'une rondelle d'orange.",
+    "picture": "tequilasunrise.jpg",
+    "validation": true,
+    "user_id": 1
+},
+{
+    "name": "negroni",
+    "instruction": "Réalisez la recette 'Negroni' directement dans le verre. Versez les ingrédients directement dans le verre sur des glaçons. Touiller legèrement et servir. Servir dans un verre de type 'old fashioned'. Deux demi-rondelle d'orange dans le verre.",
+    "picture": "negroni.jpg",
+    "validation": true,
+    "user_id": 1
+},
+{
+    "name": "old fashioned",
+    "instruction": "Réalisez la recette 'Old Fashioned' dans un verre à mélange. Écraser le morceau de sucre imbibé d'Angostura dans le fond d'un verre jusqu'à dissolution complète du sucre. Remplir de glace, ajouter le Bourbon et compléter avec l'eau gazeuse. Servir dans un verre de type 'old fashioned'. Décorer d'un zeste d'orange.",
+    "picture": "oldfashioned.jpg",
+    "validation": true,
+    "user_id": 1
+},
+{
+    "name": "cuba libre",
+    "instruction": "Réalisez la recette 'Cuba libre' directement dans le verre. Verser citron et rhum sur des glaçons. Compléter avec le coca cola. Remuer lentement. Servir dans un verre de type 'tumbler'. Décorer avec une tranche de citron vert.",
+    "picture": "cubalibre.jpg",
+    "validation": true,
+    "user_id": 1
+},
+{
+    "name": "dry martini",
+    "instruction": "Réalisez la recette 'Dry martini' dans un verre à mélange. Verser le vermouth et le gin dans le verre à mélange. Remplir de Glaçons au 2/3. Frapper rapidement avec la cuillère à mélange de haut en bas. Servir en retenant les glaçons dans le verre rafraîchi et décoré d'une olive piquée d'un bâton au fond du verre. Servir dans un verre de type 'verre à martini'. Une olive au fond du verre. Vous pouvez la piquer avec un cure-dents afin qu'elle soit plus accessible.",
+    "picture": "drymartini.jpg",
+    "validation": true,
+    "user_id": 1
+},
+{
+    "name": "spritz",
+    "instruction": "Réalisez la recette 'Spritz' directement dans le verre. Versez l'amer puis le vin blanc pétillant et l'eau gazeuse. Ajouter des glaçons avant de servir dans un verre de type 'verre à vin'. Mettre une rondelle d’orange pour la décoration.",
+    "picture": "spritz.jpg",
+    "validation": true,
+    "user_id": 1
+},
+{
+    "name": "manhattan",
+    "instruction": "Réalisez la recette 'Manhattan' dans un verre à mélange. Versez les ingrédients dans un verre à mélange avec des glaçons et agitez vigoureusement avec une cuillère à mélange. Passez dans le verre préalablement rafraîchi en retenant les glaçons. Servir dans un verre de type 'verre à martini'. Une cerise au fond du verre.",
+    "picture": "manhattan.jpg",
+    "validation": true,
+    "user_id": 1
+},
+{
+    "name": "whisky sour",
+    "instruction": "Réalisez la recette 'Whisky Sour' au shaker. Presser le jus d'un citron, verser dans le shaker avec le whisky et le sucre de canne. Bien frapper avec quelques glaçons et versez le tout dans le verre. Servir dans un verre de type 'old fashioned'. Décorer d'une rondelle de citron",
+    "picture": "whiskysour.jpg",
+    "validation": true,
+    "user_id": 1
+},
+{
+    "name": "paloma",
+    "instruction": "Réalisez la recette 'Paloma' au shaker. Verser tous les ingrédients dans un shaker à l’exception de l’eau pétillante, ajouter des glaçons puis secouer vigoureusement. Allonger avec l’eau pétillante. Servir dans un verre de type 'old fashioned'. Décorer d'une rondelle de pamplemousse",
+    "picture": "paloma.jpg",
+    "validation": true,
+    "user_id": 1
+},
+{
+    "name": "french 75",
+    "instruction": "Réalisez la recette 'French 75' directement dans le verre. Verser les ingrédient dans le verre et allongez lentement avec le champagne frais. Servir dans un verre de type 'flûte'. Une cerise dans le fond du verre et éventuellement un morceau d'orange sur le bord du verre.",
+    "picture": "french75.jpg",
+    "validation": true,
+    "user_id": 1
+},
+{
+    "name": "limonade à la pêche",
+    "instruction": "Verser le jus de citron et le sirop de pêche dans un verre rempli de glaçons. Allonger le trois quart du verre restant avec l'eau pétillante, puis mélanger à l'aide de la cuillère. Garnir des tranches de pêche.",
+    "picture": "limonadealapeche.jpg",
+    "validation": true,
+    "user_id": 1
+},
+{
+    "name": "sour fraise et basilic",
+    "instruction": "Verser tous les ingrédients dans le shaker. Ajouter des glaçons, puis secouer vigoureusement. Double-filtrer à l'aide de la passoire fine dans un verre rafraîchi. Garnir de la fraise.",
+    "picture": "sourfraiseetbasilic.jpg",
+    "validation": true,
+    "user_id": 1
+},
+{
+    "name": "bora bora",
+    "instruction": "Versez les jus d’ananas, de fruits de la passion, de citron et la grenadine dans un shaker rempli de glace. Secouez énergiquement. Versez dans un verre en filtrant les glaçons. Décorez d'une rondelle d'orange et servez immédiatement avec une paille.",
+    "picture": "borabora.jpg",
+    "validation": true,
+    "user_id": 1
+},
+{
+    "name": "mango coco",
+    "instruction": "Dans un blinder rempli de glaçons, versez le nectar de mangue, puis le citron vert pressé. Ajoutez le sirop de canne et la menthe fraîche. Ajoutez la crème de coco puis mixer le tout. Versez votre mocktail dans le verre et ajoutez un morceau de mangue sur le dessus",
+    "picture": "mangococo.jpg",
+    "validation": true,
+    "user_id": 1
+},
+{
+    "name": "pink tonic",
+    "instruction": "Dans un shaker rempli de quelques glaçons, verser le jus de citron vert, le jus de litchi, le jus de goyave puis le jus de framboise. Shaker le tout puis verser dans un verre à pied. Compléter avec le tonic puis remuer délicatement.",
+    "picture": "pinktonic.jpg",
+    "validation": true,
+    "user_id": 1
+}
+]

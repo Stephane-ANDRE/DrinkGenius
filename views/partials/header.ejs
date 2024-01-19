@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Drink Genius</title>
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/cocktailsList.css">
+    <link rel="stylesheet" href="../css/cocktail.css">
+    <link rel="stylesheet" href="../css/modals.css">
+    <link rel="stylesheet" href="../css/profile.css">
+    <link rel="stylesheet" href="../css/legalNotice.css">
+    <link rel="stylesheet" href="../css/generator.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link rel="icon" href="../images/cocktail.png" type="image/x-icon">
+
+  </head>
+  <body>
+
+    <div id="container">
+
+        <header id="header">
+          <a id="header-logo-container" href="/">
+            <img id="header-logo" src="/images/cocktail.png" alt="logo">
+            <h1 id="header-title">Drink Genius</h1>
+          </a>
+
+          <nav id="header-nav">
+          <div id="header-nav-toggle">
+            <i class="fas fa-bars hamburger"></i>
+            <i class="fas fa-times close"></i>
+          </div>
+            <ul id="header-nav-menu">
+                <li class="nav-item"><a class="nav-item-link" href="/">Accueil</a></li>
+                <li class="nav-item"> <a class="nav-item-link"  href="/cocktails">Liste des cocktails</a></li>
+                <% if (locals.user) { %>
+                  <li class="nav-item"><a class="nav-item-link" href="/profile/parameters">Profil</a></li>
+                  <li class="nav-item"><a class="nav-item-link" href="/logout">Déconnexion</a></li>
+                <% } else { %>
+                  <li class="nav-item modal-trigger-connexion"><div class="">Connexion</div></li>
+                <% } %>
+            </ul>
+          </nav>
+        </header>
+
+    <!--MODALE AUTHENTIFICATION-->
+    <div class="modal-container" id="auth-modal">
+      <div class="overlay modal-trigger"></div>
+      <div class="modal" role="dialog" aria-labelledby="modalTitle">
+          <i id="close-modal" class="fas fa-times close-modal modal-trigger" aria-label="close modal"></i>
+          <h3 id="modalTitle">Remplis ce formulaire puis remplis ton verre !</h3>
+          <form id="auth-modal-form" action="/signIn" method="post">
+            <ul>
+              <li>
+                <input class="input" type="text" name="lastname" id="lastname-input" placeholder="Votre nom" pattern="^[A-Za-zÀ-ÖØ-öø-ÿ\s'-]+$">
+              </li>
+              <li>
+                <input class="input" type="text" name="firstname" id="firstname-input" placeholder="Votre prénom" pattern="^[A-Za-zÀ-ÖØ-öø-ÿ\s'-]+$">
+              </li>
+              <li id="date-field">
+                <input class="input" type="number" name="birthdate" id="date-input" placeholder="Votre année de naissance" pattern="(?:19|20)\d\d">
+                <span></span>
+              </li>
+              <li>
+                <input class="input" type="email" name="email" id="email-input" placeholder="Votre email" required>
+              </li>
+              <li id="pass-field">
+                <input class="input" type="password" name="password" id="password-input" placeholder="Votre mot de passe" pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,}$" required>
+                <span></span>
+              </li>
+              <li id="confirmation-field">
+                <input class="input" type="password" name="confirmation" id="confirmation-input" placeholder="Confirmation" pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,}$">
+                <span></span>
+              </li>
+              <button class="button" type="submit" id="auth-modal-submit-button" class="modal-button" disabled>S'enregistrer</button>
+            </ul>
+          </form>
+          <a id="already-registered-link" href="">Déjà inscrit ? Connectez-vous</a>
+      </div>
+	  </div>

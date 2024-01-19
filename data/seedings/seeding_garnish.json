@@ -1,0 +1,98 @@
+[
+    {
+        "name": "ananas",
+        "unit": "morceaux",
+        "min_quantity": 1,
+        "max_quantity": 4
+    },
+    {
+        "name": "cerise confite",
+        "unit": "",
+        "min_quantity": 1,
+        "max_quantity": 4
+    },
+    {
+        "name": "citron",
+        "unit": "rondelle",
+        "min_quantity": 1,
+        "max_quantity": 4
+    },
+    {
+        "name": "menthe",
+        "unit": "feuilles",
+        "min_quantity": 1,
+        "max_quantity": 4
+    },
+    {
+        "name": "celeri",
+        "unit": "branche",
+        "min_quantity": 1,
+        "max_quantity": 2 
+    },
+    {
+        "name": "citron vert",
+        "unit": "rondelle",
+        "min_quantity": 1,
+        "max_quantity": 4 
+    },
+    {
+        "name": "citron",
+        "unit": "zeste",
+        "min_quantity": 1,
+        "max_quantity": 3 
+    },
+    {
+        "name": "citron vert",
+        "unit": "zeste",
+        "min_quantity": 1,
+        "max_quantity": 3 
+    },
+    {
+        "name": "orange",
+        "unit": "rondelle",
+        "min_quantity": 1,
+        "max_quantity": 2 
+    },
+    {
+        "name": "orange",
+        "unit": "zeste",
+        "min_quantity": 1,
+        "max_quantity": 3 
+    },
+    {
+        "name": "olive verte",
+        "unit": "",
+        "min_quantity": 1,
+        "max_quantity": 3 
+    },
+    {
+        "name": "pamplemousse",
+        "unit": "rondelle",
+        "min_quantity": 1,
+        "max_quantity": 2 
+    },
+    {
+        "name": "pêche",
+        "unit": "tranche",
+        "min_quantity": 1,
+        "max_quantity": 2 
+    },
+    {
+        "name": "fraise",
+        "unit": "",
+        "min_quantity": 1,
+        "max_quantity": 2 
+    },
+    {
+        "name": "mangue",
+        "unit": "morceau",
+        "min_quantity": 1,
+        "max_quantity": 2 
+    },
+    {
+        "name": "framboise",
+        "unit": "",
+        "min_quantity": 1,
+        "max_quantity": 4 
+    }
+]

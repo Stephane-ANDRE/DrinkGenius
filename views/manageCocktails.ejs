@@ -1,0 +1,30 @@
+<%- include("partials/header") %>
+
+
+<%- include('partials/profileNav') %>
+    <div class="profile-content" id="manage-cocktails">
+        <h2>Liste des cocktails en attente :</h2>
+        <div id="message-display-cocktail-manage"></div>
+        <div class="cocktails cocktails-container" id="first-child">
+            <% if (!error) { %>
+            <% notValidatedCocktails.forEach(cocktail => { %>
+                <div id="not-validated-cocktail">
+                    <a class="cocktail cocktails-container-item" href="/cocktail/<%=cocktail.id%>">
+                        <h3 class="cocktail-title"><%=cocktail.name.charAt(0).toUpperCase() + cocktail.name.slice(1)%></h3>
+                        <div class="cocktail-img" style="background-image: url('/images/<%= cocktail.picture %> ');" alt="Image de <%= cocktail.name %>" id="<%= cocktail.id %>"></div>
+                    </a>
+                    <div>
+                        <button class ="validate-btn validate-cocktail" type="button" data-info="<%= cocktail.id %>">Valider</button>
+                        <button class="validate-btn delete-cocktail" type="button" data-info="<%= cocktail.id %>">Supprimer</button>
+                    </div>
+                </div>
+            <% }) %>
+            <% } else { %>
+                <p><%= error %></p>
+                <% } %>
+        </div>
+    </div>
+
+</main>
+<script type="module" src="/js/cocktailManagement.js" defer></script>
+<%- include("partials/footer") %>

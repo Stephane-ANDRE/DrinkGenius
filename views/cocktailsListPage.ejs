@@ -1,0 +1,54 @@
+<%- include("partials/header") %>
+
+        <!-- MAIN -->
+        <main id="main">
+            <div id="cocktails-main-container">
+                <h2>Liste des cocktails</h2>
+
+        <!-- SEARCH BAR -->
+        <div class="drink-list-form">
+
+            <input id="searchbar" onkeyup="search_cocktail()"type="text"
+            name="search" placeholder="Rechercher par cocktail...">
+            <a class="spirit-modal-trigger-open preferences-btn"> Filtrer par Alcool</a>
+        </div>
+
+    <!-- MODALE FILTRE -->
+    <div class="modal-container-spirit">
+        <div class="overlay spirit-modal-trigger"></div>
+        <div class="modal-spirit">
+            <button class="close-modal-spirit spirit-modal-trigger">X</button>
+                <h2 id="modalTitle">Filtre avec notre sélection d'alcools</h2>
+                <form class="spirit-selection-form" id="spiritsForm">
+                    <div class="modal-checkbox-container">
+                        <% spirits.forEach(spirit => { %>
+                            <div class="modal-checkbox">
+
+                            <input class="checkbox"type="checkbox"  name="spirit" id="<%= spirit.id %>" value="<%= spirit.name %>">
+                  <label class="spirit-name" for="<%= spirit.name %>"><%=spirit.name.charAt(0).toUpperCase() + spirit.name.slice(1)%></label>
+                            </div>
+                        <% }) %>
+                    </div>
+                            <div class="spirit-btn-validation">
+                        <button type="submit"  class="spirit-modal-btn ">Valider</button>
+                            </div>
+                </form>
+        </div>
+	</div>
+    <div id="message-container"></div>
+
+          <!-- COCKTAILS CONTAINER-->
+                <div class="cocktails cocktails-container">
+                    <% cocktails.forEach(cocktail => { %>
+                        <a class="cocktail cocktails-container-item" href="/cocktail/<%=cocktail.id%>">
+                            <h3 class="cocktail-title"><%=cocktail.name.charAt(0).toUpperCase() + cocktail.name.slice(1)%></h3>
+                            <div class="cocktail-img" style="background-image: url('/images/<%= cocktail.picture %> ');" alt="Image de <%= cocktail.name %>" id="<%= cocktail.id %>"></div>
+                        </a>
+                    <% }) %>
+
+                </div>
+            </div>
+        </main>
+        <script src="/js/searchBar.js" defer></script>
+        <script src="/js/spirit-filter.js"> defer</script>
+<%- include("partials/footer") %>

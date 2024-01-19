@@ -1,0 +1,32 @@
+<%- include("partials/header") %>
+<%- include('partials/profileNav') %>
+
+    <div class="profile-content" id="parameters-content">
+            <h2>Paramètres du compte</h2>
+            <div id="parameters-message"></div>
+                <form class="profil-form" id="parameters-form">
+                    <label for="firstname">Nom</label>
+                    <input type="text" name="lastname" value="<%= userInfo.lastname %>" pattern="^[A-Za-zÀ-ÖØ-öø-ÿ\s'-]+$">
+                    <label for="lastname">Prénom</label>
+                    <input type="text" name="firstname" value="<%= userInfo.firstname %>" pattern="^[A-Za-zÀ-ÖØ-öø-ÿ\s'-]+$">
+                    <label for="birthdate">Date de naissance :</label>
+                    <input type="number" name="birthdate" value="<%= userInfo.birthdate %>" pattern="[0-9]{4}">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" value="<%= userInfo.email %>">
+                    <label for="location">Ville</label>
+                    <input type="text" name="location" value="<%= userInfo.location %>" pattern="^[A-Za-zÀ-ÖØ-öø-ÿ\s'-]+$">
+                    <label for="hobbies">Loisirs</label>
+                    <input type="text" name="hobbies" value="<%= userInfo.hobbies %>" pattern="^(.|\s)*[a-zA-Z]+(.|\s)*$">
+                    <button type="submit" class="btn-mini" id="parameters-modification-btn" disabled>Enregistrer</button>
+                    <button id="delete-account-button" type="button">Supprimer mon compte</button>
+                </form>
+                <div id="deletion-confirmation" style="display : none;">
+                    <h3>Voulez-vous vraiment supprimer votre compte ?</h3>
+                    <button class="btn-mini" id="validation">Oui, supprimer mon compte et tous mes créations de cocktails</button>
+                    <button class="btn-mini" id="refusal">Non, je garde mon compte Drink Genius</button>
+                </div>
+    </div>
+
+</main>
+<script type="module" src="/js/profileParameters.js" defer></script>
+<%- include("partials/footer") %>

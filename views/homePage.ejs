@@ -1,0 +1,107 @@
+<%- include("partials/header") %>
+
+
+
+        <!-- MAIN -->
+        <main id="main">
+
+        <!--MODAL PREVENTION-->
+        <div class="modal-container" id="prevention-modal">
+            <div class="overlay"></div>
+            <div class="modal" role="dialog" aria-labelledby="modalTitle">
+                <h3 id="modal-title">Bienvenue sur Drink Genius !</h3>
+                <p>Avant que vous puissiez profiter de cette application nous aimerions vérifier votre année de naissance.</p>
+                <form id="prevention-modal-form">
+                    <input type="number" id="birth-year" name="birthYear">
+                    <span></span>
+                    <button type="button" class="button modal-button" id="checkAgeButton">Valider</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Générateur -->
+        <div id="generator-main-container">
+            <div id="generator-container">
+              <div id="machine-container">
+                  <div id="machine">
+                      <div id="bottles-container">
+                          <div class="bottle">
+                              <div class="bottle-part-one">
+                                  <div class="liquid-one"></div>
+                              </div>
+                              <div class="neck">
+                                  <div class="liquid-two"></div>
+                              </div>
+                          </div>
+                          <div class="bottle">
+                              <div class="bottle-part-one">
+                                  <div class="liquid-one"></div>
+                              </div>
+                              <div class="neck">
+                                  <div class="liquid-two"></div>
+                              </div>
+                          </div>
+                          <div class="bottle">
+                              <div class="bottle-part-one">
+                                  <div class="liquid-one"></div>
+                              </div>
+                              <div class="neck">
+                                  <div class="liquid-two"></div>
+                              </div>
+                          </div>
+                          <div class="bottle">
+                              <div class="bottle-part-one">
+                                   <div class="liquid-one"></div>
+                              </div>
+                              <div class="neck">
+                                  <div class="liquid-two"></div>
+                              </div>
+                          </div>
+                          <div class="bottle">
+                              <div class="bottle-part-one">
+                                   <div class="liquid-one"></div>
+                              </div>
+                              <div class="neck">
+                                  <div class="liquid-two"></div>
+                              </div>
+                          </div>
+                      </div>
+                      <div id="bloc">
+                          <div class="generator-text-container">
+                              <h2 id="generator-title">Générer un cocktail !</h2>
+                          </div>
+                          <label id="generator-virgin-option-label">
+                            <input id="generator-virgin-option-checkbox" type="checkbox" name="Sans-Alcool">
+                            Sans-Alcool
+                          </label>
+                          <!-- <a class="preferences-btn">+ Filtres</a> -->
+                          <a id="new-cocktail" href="">Faire un nouveau cocktail</a>
+                          <div id="glass-container">
+                              <div id="door"></div>
+                              <div id="stream"></div>
+                              <img id="glass" src="../images/verre.png" alt="verre à cocktail">
+                              <div id="glass-liquid"></div>
+                          </div>
+                          <div id="mute-btn">
+                              <i class="fa-solid fa-volume-high fa-lg"></i>
+                          </div>
+                      </div>
+                  </div>
+                  <div id="bloc-levier">
+                      <div id="bloc1"></div>
+                      <div id="bloc2"></div>
+                      <div id="levier">
+                          <div id="boule"></div>
+                          <div id="bras"></div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+        </main>
+
+        <script type="module" src="/js/random.js" defer></script>
+        <script src="/js/generator.js"></script>
+
+<%- include("partials/footer") %>

@@ -1,0 +1,31 @@
+<%- include("partials/header") %>
+<%- include("partials/profileNav") %>
+
+<div class="profile-content" id="favourites-content">
+
+  <h2>Vos cocktails préférés</h2>
+
+  <!-- COCKTAILS CONTAINER-->
+  <div class="cocktails-container" id="favourite-container">
+    <% if(error) { %>
+        <p><%= error %></p>
+    <% } else { %>
+      <% favourites.forEach(favourite => { %>
+        <div class="cocktails-container-item">
+          <h3 class="cocktail-title-mini"><%=favourite.name.charAt(0).toUpperCase() + favourite.name.slice(1)%>
+            <i class="add-favourite-btn fa-regular fa-heart fa-sm" data-cocktail-id="<%= favourite.id %>"></i>
+          </h3>
+          <a class="cocktail cocktails-container-item" href="/cocktail/<%=favourite.id%>">
+            <div class="cocktail-img" style="background-image: url('/images/<%= favourite.picture %> ');" alt="Image de <%= favourite.name %>" data-info="<%= favourite.id %>"></div>
+          </a>
+        </div>
+      <% }) %>
+    <% } %>
+  </div>
+</div>
+
+</div>
+
+<script type="module" src="/js/favouritesToggle.js" defer></script>
+
+<%- include("partials/footer") %>

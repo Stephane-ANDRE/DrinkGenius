@@ -1,0 +1,24 @@
+<%- include("partials/header") %>
+<%- include("partials/profileNav") %>
+
+
+<!-- COCKTAILS CONTAINER-->
+<div class="profile-content" id="user-cocktails-content">
+        <h2>Vos créations</h2>
+            <% if (error) { %>
+                <p><%= error %></p>
+            <% } else { %>
+                <div class="cocktails-container">
+                    <% userCocktails.forEach(userCocktail => { %>
+                        <a class="cocktail cocktails-container-item" href="/cocktail/<%=userCocktail.id%>">
+                            <h3 class="cocktail-title-mini"><%=userCocktail.name.charAt(0).toUpperCase() + userCocktail.name.slice(1)%></h3>
+                            <div class="cocktail-img" style="background-image: url('/images/<%= userCocktail.picture %> ');" alt="Image de <%= userCocktails.name %>" id="<%= userCocktails.id %>"></div>
+                        </a>
+                    <% }) %>
+                </div>
+            <% } %>
+
+    </div>
+</main>
+
+<%- include("partials/footer") %>

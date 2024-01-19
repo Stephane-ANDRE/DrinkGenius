@@ -1,0 +1,32 @@
+[
+    {
+    "lastname": "admin",
+    "firstname": "admin",
+    "birthdate": "1992",
+    "location": "",
+    "email": "admin@admin.fr",
+    "password": "admin",
+    "hobbies": "",
+    "role_id": 1
+    },
+    {
+    "lastname": "user",
+    "firstname": "user",
+    "birthdate": "1992",
+    "location": "",
+    "email": "user@user.fr",
+    "password": "user",
+    "hobbies": "",
+    "role_id": 2
+    },
+    {
+    "lastname": "Soif",
+    "firstname": "Jay",
+    "birthdate": "1990",
+    "location": "Cognac",
+    "email": "jaysoif@gmail.com",
+    "password": "Jaysoif1234!",
+    "hobbies": "Les soirées mousse",
+    "role_id": 2
+    }
+]

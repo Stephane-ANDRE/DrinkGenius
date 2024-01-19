@@ -1,0 +1,300 @@
+
+#profile-main-container {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+    margin-right: 200px;
+    gap: 20px;
+    justify-content: center;
+    color: var(--theme-purple);
+}
+
+/*#### NAV ####*/
+
+.return-link {
+    position: absolute;
+    top: 120px;
+    /* left: 30px; */
+    display: none;
+}
+
+#user-nav {
+    height: fit-content;
+    width: 350px;
+    margin-left: -40px;
+    margin-bottom: 50px;
+}
+
+#user-nav-ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top:50px;
+}
+
+#user-nav .nav-item{
+    text-align: center;
+    font-size: 1.2em;
+    border-radius: 57px;
+    width: 250px;
+    padding: 15px;
+}
+
+.user-btn {
+    background: #2d213f0c;
+}
+
+.user-active-btn {
+    background-color: var(--theme-purple);
+    color: white;
+}
+
+#user-nav .nav-item:hover {
+    background: var(--theme-purple);
+    color: white;
+}
+
+.profile-content {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 30%;
+    padding-bottom: 60px;
+}
+
+.profile-content h2 {
+    text-align: center;
+}
+
+#profile-main-container .cocktails-container {
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+#profile-flex-content h2 {
+    color: var(--theme-purple);
+    margin-bottom: 1.5em;
+}
+
+/* Onglet Paramètres */
+
+.profil-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.profil-form input {
+    text-align: center;
+    font-family: "Mooli", sans-serif;
+    background: #ffffff;
+    border: none;
+    padding: 7px 15px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    width: 250px;
+}
+
+.btn-mini {
+    font-family: "Mooli", sans-serif;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 57px;
+    padding: 15px 30px;
+    background: #2d213f0c;
+    border: none;
+}
+
+.btn-mini:not([disabled]):hover {
+    background: var(--theme-purple);
+    color: white;
+}
+
+#delete-account-button {
+    font-family: "Mooli", sans-serif;
+    color: red;
+    margin-top: 20px;
+    text-align: center;
+    background: none;
+    border: none;
+}
+
+#delete-account-button:hover {
+    font-weight: bold;
+}
+
+#deletion-confirmation {
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+#deletion-confirmation button {
+    width: 300px;
+}
+
+#validation {
+    color: red;
+    padding: 20px;
+}
+
+#validation:hover {
+    border-radius: 30px;
+    font-weight: bold;
+    background-color: red;
+    color: white;
+}
+
+#refusal {
+    padding: 20px;
+}
+
+#refusal:hover {
+    padding: 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    background-color: var(--theme-purple);
+    color: white;
+}
+
+/* Onglet Favoris */
+#favourite-container {
+    gap: 50px;
+}
+#favourite-mini {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+/* Onglet Proposer un cocktail */
+
+#new-cocktail-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 5px;
+    max-width: 400px;
+}
+
+#new-cocktail-form :nth-child(4) {
+    border-radius: 25px;
+    border: none;
+}
+
+#instruction-input {
+    border-radius: 50px;
+    height: 130px;
+}
+
+#ingredients-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+#new-cocktail-form .input,
+.quantity-input,
+textarea,
+.select-dropdown {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    font-family: "Mooli", sans-serif;
+    resize: none;
+}
+
+#ingredients-label {
+    margin-bottom: 10px;
+}
+
+#ingredients-section input {
+    width: 100px;
+    margin-bottom: 25px;
+}
+
+#ingredients-section select {
+    margin-bottom: 5px;
+    text-align: center;
+    background-color: white;
+}
+
+.add-ingredient-button {
+    cursor: pointer;
+}
+
+.add-ingredient-button:hover {
+    font-weight: bold;
+}
+
+/* Onglet Admin Valider */
+#not-validated-cocktail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.validate-btn {
+    background: #2d213f0c;
+    border-radius: 20px;
+}
+.validate-btn:hover{
+    background-color: var(--theme-purple);
+    color: white;
+}
+
+#users-container {
+    font-size: 1.3em;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1400px) {
+    #profile-main-container {
+        margin-right: 0px;
+    }
+}
+
+@media screen and (max-width: 790px) {
+
+    .cocktail-title-mini .add-favourite-btn {
+        margin-left: 5px;
+        font-size: 1em;
+    }
+
+    #favourites-content, #user-cocktails-content {
+        width: 70%;
+    }
+
+    .profile-content h2 {
+        display: none;
+    }
+
+    .profile-content {
+        margin-top: 70px;
+        display: none;
+    }
+
+    #user-nav {
+        margin-left: 0px;
+    }
+
+    .user-active-btn {
+        background: #2d213f0c;;
+        color: var(--theme-purple);
+    }
+
+}

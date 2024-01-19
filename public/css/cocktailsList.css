@@ -1,0 +1,253 @@
+#cocktails-main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 70px;
+}
+
+#cocktails-main-container h2 {
+  margin-top: 70px;
+}
+
+.cocktails-container {
+  width: 70%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px 5%;
+  margin-bottom: 100px;
+}
+
+.cocktail-mini {
+  height: 150px;
+  width: 150px;
+  background-size: 150px;
+  border-radius: 40px;
+  box-shadow: 5px 5px 40px #081a1941;
+}
+
+.cocktails-container-item {
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 21.25%;
+  gap: 20px;
+  width: fit-content;
+  height: fit-content;
+
+}
+
+.cocktail-title {
+  font-size: 1.5em;
+}
+
+.cocktail-title-mini {
+  font-size: 1em;
+}
+
+.cocktail-title-mini  .add-favourite-btn{
+  margin-top: 7px;
+  font-size: 1.6em;
+}
+
+.cocktail-img {
+  height: 200px;
+  width: 200px;
+  background-size: 200px;
+  border-radius: 50px;
+  box-shadow: 5px 5px 40px #081a1941;
+}
+
+#cocktail-img:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+/*#### SEARCH BAR ####*/
+
+
+.drink-list-form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 500px;
+  gap: 5%;
+}
+#searchbar {
+  font-family: 'Mooli', sans-serif;
+  font-size: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 50px;
+  padding: 20px 20px;
+  width: 68.5%;
+}
+
+/*###### SPIRIT FILTER ####*/
+.spirit-modal-trigger {
+  width: 28.5%;
+}
+
+/*#### MODAL FILTRE####*/
+#message-container{
+  display: none;
+}
+.modal-container-spirit {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+}
+.modal-container-spirit.active {
+  display: block;
+}
+.modal-container-spirit.active .overlay {
+  opacity: 0.6;
+  background-color: black;
+  transition: all 0.4s;
+}
+
+.modal-spirit {
+    height: 70%;
+    font-family: 'Mooli', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    gap: 30px;
+    background: #fff;
+    border-radius: 5px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    border-radius: 25px;
+    height: fit-content;
+}
+
+.modal-container-spirit.active .modal-spirit {
+  transform: translate(-50%, -50%);
+  transition: opacity 0.4s 0.2s ease-out, transform 0.4s 0.2s ease-out;
+}
+
+.close-modal-spirit {
+    font-family: 'Mooli', sans-serif;
+
+    padding: 20px 20px;
+    border:none;
+    font-size: 18px;
+    position:absolute;
+    top:10px;
+    right:10px;
+    cursor: pointer;
+    color: var(--theme-purple);
+    background-color: white;
+    font-weight: bold;
+}
+
+
+.modal-spirit h2 {
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 150%;
+}
+.modal-checkbox-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding-left: 30px;
+}
+
+.modal-checkbox {
+  display: flex;
+  padding-right: 10px;
+  padding-bottom: 3px;
+  width: 25%;
+}
+
+.modal-spirit label {
+  display: block;
+  text-align: start;
+}
+.modal-spirit input {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.spirit-btn-validation {
+  display: flex;
+  flex-direction: row;
+ justify-content: center;
+  padding:15px;
+  border-radius: 10px;
+}
+
+.spirit-modal-btn {
+  font-family: "Mooli", sans-serif;
+  border-radius: 50px;
+  border: 2px solid var(--theme-purple);
+  background-color: white;
+  margin: 20px;
+  padding: 15px;
+  font-size: 1.2em;
+  width: 200px;
+}
+
+.spirit-modal-btn:hover {
+  color: white;
+  background-color: var(--theme-purple);
+}
+
+@media screen and (max-width: 790px) {
+
+    #cocktails-main-container, #favourites-content {
+      gap: 40px;
+    }
+
+    #cocktails-main-container h2, #favourites-content h2 {
+      display: none;
+    }
+
+    .drink-list-form {
+      flex-direction: column;
+      gap: 50px;
+      width: 360px;
+    }
+
+    #searchbar {
+      width: 90%;
+      padding: 10px 10px;
+    }
+
+    .modal-spirit {
+      top: 50%;
+      padding: 20px;
+      max-width: 400px;
+    }
+
+    .close-modal-spirit {
+      background-color: rgba(255, 255, 255, 0);
+      color: var(--theme-purple);
+      border-radius: 10px 10px 0 0;
+      position: relative;
+      margin:auto;
+    }
+
+    .cocktails-container {
+      gap: 30px 5%;
+      margin-bottom: 100px;
+    }
+
+    .cocktail-img {
+      width: 100px;
+      height: 100px;
+      background-size: 100px;
+    }
+}
+

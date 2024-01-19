@@ -1,0 +1,127 @@
+[
+    {
+        "cocktail_id":2,
+        "garnish_id":1,
+        "quantity": 2
+    },
+    {
+        "cocktail_id":2,
+        "garnish_id":2,
+        "quantity": 1
+    },
+    {
+        "cocktail_id":3,
+        "garnish_id":3,
+        "quantity": 1
+    },
+    {
+        "cocktail_id":3,
+        "garnish_id":4,
+        "quantity": 1
+    },
+    {
+        "cocktail_id":5,
+        "garnish_id":5,
+        "quantity": 1
+    },
+    {
+        "cocktail_id":6,
+        "garnish_id":6,
+        "quantity": 1
+    },
+    {
+        "cocktail_id":7,
+        "garnish_id":8,
+        "quantity": 1
+    },
+    {
+        "cocktail_id":8,
+        "garnish_id":6,
+        "quantity": 1
+    },
+    {
+        "cocktail_id":9,
+        "garnish_id":9,
+        "quantity": 1
+    },
+    {
+        "cocktail_id":10,
+        "garnish_id":9,
+        "quantity": 1
+    },
+    {
+        "cocktail_id":11,
+        "garnish_id":10,
+        "quantity": 1
+    },
+    {
+        "cocktail_id":12,
+        "garnish_id":6,
+        "quantity": 1
+    },
+    {
+        "cocktail_id":13,
+        "garnish_id":11,
+        "quantity": 1
+    },
+    {
+        "cocktail_id":14,
+        "garnish_id":9,
+        "quantity": 1
+    },
+    {
+        "cocktail_id":15,
+        "garnish_id":2,
+        "quantity": 1
+    },
+    {
+        "cocktail_id":16,
+        "garnish_id":3,
+        "quantity": 1
+    },
+    {
+        "cocktail_id":17,
+        "garnish_id":12,
+        "quantity": 1
+    },
+    {
+        "cocktail_id":18,
+        "garnish_id":2,
+        "quantity": 1
+    },
+    {
+        "cocktail_id":18,
+        "garnish_id":9,
+        "quantity": 1
+    },
+    {
+        "cocktail_id":19,
+        "garnish_id":13,
+        "quantity": 4
+    },
+    {
+        "cocktail_id":20,
+        "garnish_id":14,
+        "quantity": 1
+    },
+    {
+        "cocktail_id":21,
+        "garnish_id":9,
+        "quantity": 1
+    },
+    {
+        "cocktail_id":22,
+        "garnish_id":15,
+        "quantity": 1
+    },
+    {
+        "cocktail_id":23,
+        "garnish_id":16,
+        "quantity": 2
+    },
+    {
+        "cocktail_id":23,
+        "garnish_id":14,
+        "quantity": 1
+    }
+]

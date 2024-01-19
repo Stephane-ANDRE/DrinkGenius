@@ -1,0 +1,175 @@
+/* Auth modal */
+
+.modal-container {
+  display: none;
+  position: fixed;
+  top:0;
+  width: 100vw;
+  height: 100vh;
+}
+.modal-container.active{
+  z-index: 5;
+  display: block;
+}
+
+.overlay{
+  opacity: 0.6;
+  position:absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+}
+
+.modal{
+  z-index: 6;
+  height: 70%;
+  font-family: 'Mooli', sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  gap: 30px;
+  padding: 50px 50px;
+  background: #fff;
+  border-radius: 5px;
+  position:absolute;
+  top:50%;
+  left:50%;
+  max-width: 400px;
+  border-radius: 25px;
+  height: fit-content;
+}
+
+.modal-container.active .modal{
+  transform: translate(-50%,-50%);
+  transition: opacity 0.4s 0.2s ease-out, transform 0.4s 0.2s ease-out;
+}
+
+.close-modal{
+  font-family: 'Mooli', sans-serif;
+  padding: 20px 20px;
+  border:none;
+  font-size: 18px;
+  position:absolute;
+  top:10px;
+  right:10px;
+  cursor: pointer;
+  color: var(--theme-purple);
+  font-weight: bold;
+}
+
+.modal h3{
+  font-size: 1.5em;
+  width: 300px;
+  text-align: center;
+  line-height: 23pt;
+}
+
+.modal input{
+  display:block;
+  margin-bottom: 5px;
+}
+
+/*#### MODALE AUTH ####*/
+#auth-modal-form ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+#auth-modal-form ul li{
+  font-size: 1.2em;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#auth-modal-form input, #prevention-modal-form input{
+  text-align: center;
+  font-family: 'Mooli', sans-serif;
+  border: none;
+  background-color: #2d213f15;
+  border-radius: 30px;
+  padding: 5px;
+  width: 270px;
+  height: 40px;
+}
+
+#auth-modal-form label, #prevention-modal-form label {
+  cursor: alias;
+}
+
+/*#### MESSAGE D'ERREURS ####*/
+#date-field span,#pass-field span, #confirmation-field span,#prevention-modal-form span {
+  display: none;
+  font-size: 10.5pt;
+  color: red;
+  width: 270px;
+  margin-top: -10px;
+}
+
+/*#### MODALE PREVENTION ####*/
+#prevention-modal-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+#prevention-modal-form input {
+  width: 100px;
+}
+
+.modal p {
+  line-height: 15pt;
+}
+
+#modal-title {
+  width: 200px;
+  line-height: 25pt;
+}
+
+#birth-year {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 790px) {
+  .modal {
+    top: 50%;
+    padding: 40px 20px;
+    width:330px;
+    gap: 20px;
+  }
+
+  /* AUTH */
+  #auth-modal-form {
+    width: 90%;
+    gap: 10px;
+  }
+
+  #auth-modal-form ul li {
+    font-size: 0.9em;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #auth-modal-form input {
+    height: 30px;
+  }
+
+  /* #auth-modal-form ul button {
+    margin-top: 20px;
+    font-size: 1em;
+    padding: 15px;
+    width: 150px;
+    color: white;
+    background-color: var(--theme-purple);
+  } */
+
+  #auth-modal-form ul {
+    gap: 10px;
+  }
+}

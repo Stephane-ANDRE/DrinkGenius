@@ -1,0 +1,114 @@
+html {
+    --theme-purple: #2d213f;
+}
+
+#cocktail-main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 100px;
+}
+
+#cocktail-container {
+  width: 70vw;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px 30px;
+}
+
+/* Bouton Favoris */
+.add-favourite-btn {
+  margin-left: 15px;
+  margin-top: 15px;
+  position: absolute;
+  cursor: pointer;
+}
+
+
+#cocktail-top-section {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+#labels-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cocktail-label{
+  text-align: center;
+  font-size: 1.5em;
+  background-color: var(--theme-purple);
+  padding: 10px 20px;
+  color: white;
+  border-radius: 30px;
+}
+
+#recipe-container {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#recipe-container h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.ingredients-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.ingredients-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 1.3em;
+}
+
+#cocktail-nav {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  font-size: 0.8em;
+  margin-top: 30px;
+}
+
+#cocktail-nav-current{
+  font-weight: bold;
+}
+
+#instruction-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  max-width: 400px;
+}
+
+#instruction {
+  line-height: 15pt;
+  text-align: center;
+}
+
+@media screen and (max-width: 790px) {
+  #cocktail-top-section {
+    flex-direction: column;
+  }
+
+  /* Bouton Favoris */
+  .add-favourite-btn {
+  }
+}

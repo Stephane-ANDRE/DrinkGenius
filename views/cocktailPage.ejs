@@ -1,0 +1,60 @@
+<%- include("partials/header") %>
+
+        <main id="main">
+            <div id="cocktail-main-container">
+
+                <div id="cocktail-container">
+                    <h2><%=cocktailInfo.name.charAt(0).toUpperCase() + cocktailInfo.name.slice(1)%>
+                        <% if (locals.user) { %>
+                            <i class="add-favourite-btn fa-regular fa-heart fa-sm" data-cocktail-id="<%= cocktailInfo.id %>"></i>
+                        <% } %>
+                    </h2>
+                    <% if (locals.user) { %>
+                    <div id="cocktail-message"></div>
+                    <% } %>
+                    <div id="cocktail-top-section">
+                        <div class="cocktail-img" style="background-image: url('/images/<%= cocktailInfo.picture %>');" alt="Image de <%= cocktailInfo.name %>" data-info="<%= cocktailInfo.id %>">
+                        </div>
+
+                            <% if (cocktailInfo.labels) { %>
+                            <div id="labels-container">
+                                <ul id="labels-list">
+                                    <% cocktailInfo.labels.forEach(label => { %>
+                                        <li class="cocktail-label"><%= label %></li>
+                                    <% }) %>
+                                </ul>
+                            </div>
+                        <% } %>
+                    </div>
+                    <div id="recipe-container">
+                        <div class="ingredients-container">
+                            <h3>Ingrédients :</h3>
+                            <ul class="ingredients-list">
+                                <% cocktailInfo.ingredients.forEach(ingredient => { %>
+                                    <li>- <%= ingredient.name %> : <%= ingredient.quantity %> <%= ingredient.unit %></li>
+                                <% }) %>
+                            </ul>
+                        </div>
+                        <% if (cocktailInfo.garnitures) { %>
+                        <div class="ingredients-container">
+                            <h3>Garnitures :</h3>
+                            <ul class="ingredients-list">
+                                <% cocktailInfo.garnitures.forEach(garniture => { %>
+                                    <li>- <%= garniture.name %> : <%= garniture.quantity %> <%= garniture.unit %></li>
+                                <% }) %>
+                            </ul>
+                        </div>
+                        <% } %>
+                        <div id="instruction-container">
+                            <h3>Recette :</h3>
+                            <p id="instruction">
+                                <%= cocktailInfo.instruction %>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script src="/js/favouritesToggle.js" defer></script>
+<%- include("partials/footer") %>

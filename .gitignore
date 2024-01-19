@@ -1,0 +1,4 @@
+node_modules/
+.env
+init_db.sql
+initdb.sh

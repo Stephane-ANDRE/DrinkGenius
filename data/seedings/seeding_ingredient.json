@@ -1,0 +1,392 @@
+[
+    {
+        "name": "rhum blanc",
+        "unit": "cl",
+        "min_quantity": 1,
+        "max_quantity": 6
+    },
+    {
+        "name": "sirop de sucre de canne",
+        "unit": "cl",
+        "min_quantity": 1,
+        "max_quantity": 4
+    },
+    {
+        "name": "menthe",
+        "unit": "feuille",
+        "min_quantity": 1,
+        "max_quantity": 10
+    },
+    {
+        "name": "jus de citron vert",
+        "unit": "cl",
+        "min_quantity": 1,
+        "max_quantity": 6
+    },
+    {
+        "name": "eau gazeuse",
+        "unit": "cl",
+        "min_quantity": 1,
+        "max_quantity": 12
+    },
+    {
+        "name": "glaçons",
+        "unit": "",
+        "min_quantity": 1,
+        "max_quantity": 6
+    },
+    {
+        "name": "vodka",
+        "unit": "cl",
+        "min_quantity": 1,
+        "max_quantity": 6
+    },
+    {
+        "name": "rhum ambré",
+        "unit": "cl",
+        "min_quantity": 1,
+        "max_quantity": 6
+    },
+    {
+        "name": "jus d'ananas",
+        "unit": "cl",
+        "min_quantity": 1,
+        "max_quantity": 12
+    },
+    {
+        "name": "lait de coco",
+        "unit": "cl",
+        "min_quantity": 1,
+        "max_quantity": 4
+    },
+    {
+        "name": "ginger beer",
+        "unit": "cl",
+        "min_quantity": 1,
+        "max_quantity": 12
+    },
+    {
+        "name": "jus de citron",
+        "unit": "cl",
+        "min_quantity": 1,
+        "max_quantity": 6
+    },
+    {
+        "name": "tonic",
+        "unit": "cl",
+        "min_quantity": 1,
+        "max_quantity": 12
+    },
+    {
+        "name": "gin",
+        "unit": "cl",
+        "min_quantity": 1,
+        "max_quantity": 6
+    },
+    {
+        "name": "jus de tomates",
+        "unit": "cl",
+        "min_quantity": 1,
+        "max_quantity": 12
+    },
+    {
+        "name": "poivre",
+        "unit": "pincée",
+        "min_quantity": 1,
+        "max_quantity": 2
+    },
+    {
+        "name": "sel",
+        "unit": "pincée",
+        "min_quantity": 1,
+        "max_quantity": 2
+    },
+    {
+        "name": "tabasco",
+        "unit": "goutte",
+        "min_quantity": 1,
+        "max_quantity": 5
+    },
+    {
+        "name": "triple sec",
+        "unit": "cl",
+        "min_quantity": 1,
+        "max_quantity": 6
+    },
+    {
+        "name": "jus de cranberry",
+        "unit": "cl",
+        "min_quantity": 1,
+        "max_quantity": 12
+    },
+    {
+        "name": "curaçao",
+        "unit": "cl",       
+        "min_quantity": 1,
+        "max_quantity": 6
+    },
+    {
+        "name": "tequila",
+        "unit": "cl",
+        "min_quantity": 1,
+        "max_quantity": 6
+    },
+    {
+        "name": "jus d'orange",
+        "unit": "cl",
+        "min_quantity": 1,
+        "max_quantity": 12
+    },
+    {
+        "name": "sirop de grenadine",
+        "unit": "cl",
+        "min_quantity": 1,
+        "max_quantity": 2
+    },
+    {
+        "name": "amer",
+        "unit": "cl",
+        "min_quantity": 1,
+        "max_quantity": 6
+    },
+    {
+        "name": "vermouth rouge",
+        "unit": "cl",
+        "min_quantity": 1,
+        "max_quantity": 6
+    },
+    {
+        "name": "vermouth blanc",
+        "unit": "cl",
+        "min_quantity": 1,
+        "max_quantity": 6
+    },
+    {
+        "name": "whisky scotch",
+        "unit": "cl",
+        "min_quantity": 1,
+        "max_quantity": 6
+    },
+    {
+        "name": "whisky bourbon",
+        "unit": "cl",
+        "min_quantity": 1,
+        "max_quantity": 6
+    },
+    {
+        "name": "liqueur d'orange",
+        "unit": "gouttes",
+        "min_quantity": 1,
+        "max_quantity": 6
+    },
+    {
+        "name": "sucre",
+        "unit": "morceau",
+        "min_quantity": 1,
+        "max_quantity": 2
+    },
+    {
+        "name": "rhum cubain",
+        "unit": "cl",
+        "min_quantity": 1,
+        "max_quantity": 6
+    },
+    {
+        "name": "cola",
+        "unit": "cl",
+        "min_quantity": 1,
+        "max_quantity": 12
+    },
+    {
+        "name": "vin blanc pétillant",
+        "unit": "cl",
+        "min_quantity": 1,
+        "max_quantity": 12
+    },
+    {
+        "name": "sucre de canne liquide",
+        "unit": "cl",
+        "min_quantity": 1,
+        "max_quantity": 3
+    },
+    {
+        "name": "jus de pamplemousse",
+        "unit": "cl",
+        "min_quantity": 1,
+        "max_quantity": 12
+    },
+    {
+        "name": "sirop d'agave",
+        "unit": "cl",
+        "min_quantity": 1,
+        "max_quantity": 3
+    },
+    {
+        "name": "champagne",
+        "unit": "cl",
+        "min_quantity": 1,
+        "max_quantity": 12
+    },
+    {
+        "name": "vin mousseux",
+        "unit": "cl",
+        "min_quantity": 1,
+        "max_quantity": 12
+    },
+    {
+        "name": "limonade",
+        "unit": "cl",
+        "min_quantity": 1,
+        "max_quantity": 12
+    },
+    {
+        "name": "sirop de pêche",
+        "unit": "cl",
+        "min_quantity": 1,
+        "max_quantity": 3
+    },
+    {
+        "name": "gin sans alcool",
+        "unit": "cl",
+        "min_quantity": 1,
+        "max_quantity": 6
+    },
+    {
+        "name": "jus de fraise",
+        "unit": "cl",
+        "min_quantity": 1,
+        "max_quantity": 12
+    },
+    {
+        "name": "sirop d'érable",
+        "unit": "cl",
+        "min_quantity": 1,
+        "max_quantity": 3
+    },
+    {
+        "name": "basilic",
+        "unit": "feuille",
+        "min_quantity": 1,
+        "max_quantity": 6
+    },
+    {
+        "name": "jus de fruits de la passion",
+        "unit": "cl",
+        "min_quantity": 1,
+        "max_quantity": 9
+    },
+    {
+        "name": "sirop d'orgeat",
+        "unit": "cl",
+        "min_quantity": 1,
+        "max_quantity": 3
+    },
+    {
+        "name": "nectar de mangue",
+        "unit": "cl",
+        "min_quantity": 1,
+        "max_quantity": 12
+    },
+    {
+        "name": "crème de coco",
+        "unit": "cl",
+        "min_quantity": 1,
+        "max_quantity": 6
+    },
+    {
+        "name": "jus de goyave",
+        "unit": "cl",
+        "min_quantity": 1,
+        "max_quantity": 12
+    },
+    {
+        "name": "jus de framboise",
+        "unit": "cl",
+        "min_quantity": 1,
+        "max_quantity": 9
+    },
+    {
+        "name": "jus de litchi",
+        "unit": "cl",
+        "min_quantity": 1,
+        "max_quantity": 9
+    },
+    {
+        "name": "jus de pomme",
+        "unit": "cl",
+        "min_quantity": 1,
+        "max_quantity": 12
+    },
+    {
+        "name": "jus de mangue",
+        "unit": "cl",
+        "min_quantity": 1,
+        "max_quantity": 12
+    },
+    {
+        "name": "jus de poire",
+        "unit": "cl",
+        "min_quantity": 1,
+        "max_quantity": 12
+    },
+    {
+        "name": "jus de kiwi",
+        "unit": "cl",
+        "min_quantity": 1,
+        "max_quantity": 9
+    },
+    {
+        "name": "sirop de cassis",
+        "unit": "cl",
+        "min_quantity": 1,
+        "max_quantity": 3
+    },
+    {
+        "name": "sirop de mûre",
+        "unit": "cl",
+        "min_quantity": 1,
+        "max_quantity": 3
+    },
+    {
+        "name": "ginger ale",
+        "unit": "cl",
+        "min_quantity": 1,
+        "max_quantity": 12
+    },
+    {
+        "name": "bière",
+        "unit": "cl",
+        "min_quantity": 1,
+        "max_quantity": 9
+    },
+    {
+        "name": "crème de whisky",
+        "unit": "cl",
+        "min_quantity": 1,
+        "max_quantity": 6
+    },
+    {
+        "name": "liqueur d'amandes",
+        "unit": "cl",
+        "min_quantity": 1,
+        "max_quantity": 6
+    },
+    {
+        "name": "liqueur de menthe",
+        "unit": "cl",
+        "min_quantity": 1,
+        "max_quantity": 5
+    },
+    {
+        "name": "liqueur de cerise",
+        "unit": "cl",
+        "min_quantity": 1,
+        "max_quantity": 6
+    },
+    {
+        "name": "cidre",
+        "unit": "cl",
+        "min_quantity": 1,
+        "max_quantity": 12
+    }
+]
