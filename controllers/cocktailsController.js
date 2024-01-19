@@ -35,15 +35,7 @@ const cocktailsController = {
     }
   },
 
-  // AJOUTE UN COCKTAIL
-  async addCocktailByUser(req, res){
-    const result = await cocktailDataMapper.addOneCocktailByUser(req.body);
-    if(result===1){
-        res.redirect(`/cocktails`);
-    } else {
-        res.status(500).send('Erreur interne du serveur, aucun cocktail ajouté');
-    }
-  }
+  
 };
 
 module.exports = cocktailsController;

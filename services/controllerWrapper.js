@@ -1,12 +1,12 @@
-function controllerWrapper(mdwFunction) {
-  return async function(req, res, next) {
-    try {
-      await mdwFunction(req, res, next);
-    } catch (error) {
-      console.error(error);
-      res.status(500).json({ error: "Unexpected server error. Please try again later." });
-    }
-  };
-}
+const client = require('.././models/dbClient');
 
-module.exports = controllerWrapper;
+const loadSessionUserInLocals = async (req, res, next) => {
+  if (req.session.user) {
+    res.locals.user = req.session.user;
+    // req.user = useer;
+  }
+
+  next();
+};
+
+module.exports = loadSessionUserInLocals;

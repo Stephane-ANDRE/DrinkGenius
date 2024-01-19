@@ -205,7 +205,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Ajout du listener signup
     form.addEventListener("submit", signupListener);
   }
-
+console.log("inscription envoyée")
   // Lorsque je bascule d'inscription à connexion
   connectionNavLink.addEventListener("click", toggleModalConnexion);
 

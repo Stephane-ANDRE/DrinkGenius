@@ -11,6 +11,22 @@ const transporter = nodemailer.createTransport({
     },
 });
 
+async function warningNewCocktail(cocktailAuthorEmail, cocktailAuthorName) {
+    try {
+        // On envoie un mail pour prévenir qu'il y a un nouveau cocktail
+        const newCocktailAlert = {
+            from: "drink.geniusofficial@gmail.com",
+            to: "stephane.andre85@gmail.com", 
+            subject: "Nouvelle Création",
+            text: `Bonjour, Vous avez un nouveau cocktail à valider, proposé par ${cocktailAuthorName} (${cocktailAuthorEmail})`,
+        };
+
+        await transporter.sendMail(newCocktailAlert);
+    } catch (error) {
+        console.error(error);
+    }
+}
+
 async function sendConfirmationMail (email, firstname, id) {
 
     try {
@@ -25,7 +41,7 @@ async function sendConfirmationMail (email, firstname, id) {
 
         // On envoie le mail de confirmation
         const mailConfirmation = {
-            from: "drink.genius@gmail.com",
+            from: "drink.geniusofficial@gmail.com",
             to: `${email}`,
             subject: "Confirmation d'inscription",
             text: `Bonjour ${firstname}, Cliquez sur ce lien (valable pendant une heure) pour profiter de notre application "Drink Genius" : ${url} \n L'équipe de Drink Genius`,
@@ -36,5 +52,4 @@ async function sendConfirmationMail (email, firstname, id) {
         console.log(err);
     }
 };
-
-module.exports = sendConfirmationMail
+module.exports = { warningNewCocktail, sendConfirmationMail };

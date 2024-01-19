@@ -1,37 +1,37 @@
 <%- include("partials/header") %>
-
 <%- include('partials/profileNav') %>
-    <div class="profile-content" id="new-cocktail-content">
-            <h2>Votre cocktail</h2>
-                <form class="profil-form" id="new-cocktail-form" method="POST" action="/profile/newcocktail">
-                    <label for="name-input">Nom de la recette</label>
-                    <input id="name-input" type="text" name="name" pattern="^[A-Za-zÀ-ÖØ-öø-ÿ\d'\-\s]+$" required>
-                    <label for="instruction-input">Recette</label>
-                    <textarea id ="instruction-input" name="instruction"></textarea>
-                    <div id="ingredients-section">
-                        <label id="ingredients-label" for="ingredient-input">Ingrédients</label>
-                        <select class="new-cocktail-dropdown" name="ingredientId">
-                            <% ingredients.forEach(ingredient => { %>
-                                <option value="<%= ingredient.id %>"><%= ingredient.name %>(<%= ingredient.unit %>)</option>
-                            <% }) %>
-                        </select>
-                        <label for="quantity-input">Quantité</label>
-                        <input type="number" name="quantity" required>
+<div class="profile-content" id="new-cocktail-content">
+    <h2>Votre cocktail</h2>
+    <form class="profil-form" id="new-cocktail-form" method="POST" action="/profile/newcocktail">
+        <label for="name-input">Nom de la recette</label>
+        <input id="name-input" type="text" name="name" pattern="^[A-Za-zÀ-ÖØ-öø-ÿ\d'\-\s]+$" required>
+        <label for="instruction-input">Recette</label>
+        <textarea id="instruction-input" name="instruction"></textarea>
+        <div id="ingredients-section">
+            <label id="ingredients-label1" for="ingredientId1">Ingrédients</label>
+            <select class="new-cocktail-dropdown" name="ingredientId1">
+                <% ingredients.forEach(ingredient => { %>
+                    <option value="<%= ingredient.id %>"><%= ingredient.name %>(<%= ingredient.unit %>)</option>
+                <% }) %>
+            </select>
+            <label for="quantity1">Quantité</label>
+            <input type="number" name="quantity1" required>
 
-                        <label id="ingredients-label" for="ingredient-input">Ingrédients</label>
-                        <select class="new-cocktail-dropdown" name="ingredientId">
-                            <% ingredients.forEach(ingredient => { %>
-                                <option value="<%= ingredient.id %>"><%= ingredient.name %>(<%= ingredient.unit %>)</option>
-                            <% }) %>
-                        </select>
-                        <label for="quantity-input">Quantité</label>
-                        <input type="number" name="quantity" required>
-                    </div>
-                    <div class="add-ingredient-button">+ Ajouter un ingrédient</div>
-                    <div id="newcocktail-message"></div>
-                    <button type="submit" class="btn-mini">Envoyer</button>
-                </form>
-    </div>
+            <label id="ingredients-label2" for="ingredientId2">Ingrédients</label>
+            <select class="new-cocktail-dropdown" name="ingredientId2">
+                <% ingredients.forEach(ingredient => { %>
+                    <option value="<%= ingredient.id %>"><%= ingredient.name %>(<%= ingredient.unit %>)</option>
+                <% }) %>
+            </select>
+            <label for="quantity2">Quantité</label>
+            <input type="number" name="quantity2" required>
+        </div>
+        <div class="add-ingredient-button">+ Ajouter un ingrédient</div>
+        <div id="newcocktail-message"></div>
+        <button type="submit" id="new-cocktail-submit" class="btn-mini">Envoyer</button>
+    </form>
+</div>
 </main>
 <script type="module" src="/js/newCocktail.js" defer></script>
+<script type="module" src="/js/warningNewCocktail.js" defer></script>
 <%- include("partials/footer") %>

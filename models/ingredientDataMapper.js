@@ -65,7 +65,7 @@ const ingredientDataMapper = {
         return { result, error };
     },
 
-    // OBTENIR LE NOM D'UN INGREDIENT
+    // OBTENIR LE NOM D'UN INGREDIENT (ici le spiritueux)
     async getSpiritsName(){
         try {
             const result = await client.query(`SELECT ingredient.name AS name, ingredient.id FROM ingredient WHERE ingredient.id IN (SELECT ingredient_id FROM ingredient_has_label WHERE label_id = 1)`)

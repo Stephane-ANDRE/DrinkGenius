@@ -1,21 +1,21 @@
 <!-- MAIN -->
 <main id="profile-main-container">
 
-<nav id="user-nav">
-    <ul id="user-nav-ul">
-        <li><a href="/profile/parameters"><div class="nav-item <%= currentRoute === 'profile' ? 'user-active-btn' : 'user-btn' %>" >Paramètres du compte</div></a></li>
-        <li><a href="/profile/favourites"><div class="nav-item <%= currentRoute === 'favourites' ? 'user-active-btn' : 'user-btn' %>" >Mes favoris</div></a></li>
-        <li><a href="/profile/usercocktails"><div class="nav-item <%= currentRoute === 'usercocktails' ? 'user-active-btn' : 'user-btn' %>" >Mes créations</div></a></li>
-        <li><a href="/profile/newcocktail"><div class="nav-item <%= currentRoute === 'newCocktail' ? 'user-active-btn' : 'user-btn' %>" >Proposer une recette</div></a></li>
-        <% if (locals.user.role_id === 1) { %>
-        <li><a href="/admin/cocktails"><div class="nav-item <%= currentRoute === 'admin/cocktails' ? 'user-active-btn' : 'user-btn' %>" >Valider les cocktails en attente</div></a></li>
-        <li><a href="/admin/users"><div class="nav-item <%= currentRoute === 'admin/users' ? 'user-active-btn' : 'user-btn' %>" >Gérer les comptes utilisateurs</div></a></li>
-        <% } %>
-    </ul>
-</nav>
-
-    <a class="return-link" href="/profile/parameters">
-        <i class="fa-solid fa-circle-chevron-left fa-2xl"></i>
-    </a>
-
-<script src="../../js/navLinks.js" defer></script>
+    <nav id="user-nav">
+        <ul id="user-nav-ul">
+            <li><a href="/profile/parameters"><div class="nav-item <%= currentRoute === 'profile' ? 'user-active-btn' : 'user-btn' %>" >Paramètres du compte</div></a></li>
+            <li><a href="/profile/favourites"><div class="nav-item <%= currentRoute === 'favourites' ? 'user-active-btn' : 'user-btn' %>" >Mes favoris</div></a></li>
+            <li><a href="/profile/usercocktails"><div class="nav-item <%= currentRoute === 'usercocktails' ? 'user-active-btn' : 'user-btn' %>" >Mes créations</div></a></li>
+            <li><a href="/profile/newcocktail"><div class="nav-item <%= currentRoute === 'newCocktail' ? 'user-active-btn' : 'user-btn' %>" >Proposer une recette</div></a></li>
+            <% if (locals.user.role_id === 1) { %>
+            <li><a href="/admin/cocktails"><div class="nav-item <%= currentRoute === 'admin/cocktails' ? 'user-active-btn' : 'user-btn' %>" >Valider les cocktails en attente</div></a></li>
+            <li><a href="/admin/users"><div class="nav-item <%= currentRoute === 'admin/users' ? 'user-active-btn' : 'user-btn' %>" >Gérer les comptes utilisateurs</div></a></li>
+            <% } %>
+        </ul>
+    </nav>
+    
+        <a class="return-link" href="/profile/parameters">
+            <i class="fa-solid fa-circle-chevron-left fa-2xl"></i>
+        </a>
+    
+    <script src="../../js/navLinks.js" defer></script>

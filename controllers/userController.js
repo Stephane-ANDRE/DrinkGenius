@@ -3,7 +3,7 @@ const cocktailDataMapper = require('../models/cocktailDataMapper');
 const userDataMapper = require('../models/userDataMapper');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
-const sendConfirmationMail = require ("../services/mailService");
+const { warningNewCocktail, sendConfirmationMail } = require ("../services/mailService");
 let currentRoute = "";
 
 const userController = {
@@ -102,50 +102,64 @@ const userController = {
     }
   },
 
-  // AJOUT D'UN COCKTAIL EN BASE DE DONNEES
-  async addNewCocktail(req, res){
-    let { name, instruction, ingredientId, quantity } = req.body;
-    const userId = req.session.user.id;
+// AJOUT D'UN COCKTAIL EN BASE DE DONNEES
+async addNewCocktail(req, res) {
+  let { name, instruction, ingredientId, quantity } = req.body;
+  const userId = req.session.user.id;
 
-    // CONVERSION DES ID EN INTEGER
+  // Vérification si ingredientId et quantity sont définis et des tableaux
+  if (Array.isArray(ingredientId) && Array.isArray(quantity)) {
+      // Appliquer map() si les données sont des tableaux
       ingredientId = ingredientId.map(el => parseInt(el, 10));
       quantity = quantity.map(el => parseInt(el, 10));
 
-    // VERIFICATION DU NOM ENVOYE
-    const regex = /^[A-Za-zÀ-ÖØ-öø-ÿ\d\s'-]+$/;
-    if(!regex.test(name)){
-      const errorMessage = "Le nom du cocktail ne doit contenir que des lettres et des chiffres."
-      return res.status(400).render('errorPage', {errorMessage})
-    }
+      // Vérification du nom envoyé
+      const regex = /^[A-Za-zÀ-ÖØ-öø-ÿ\d\s'-]+$/;
+      if (!regex.test(name)) {
+          const errorMessage = "Le nom du cocktail ne doit contenir que des lettres et des chiffres."
+          return res.status(400).render('errorPage', { errorMessage });
+      }
 
-    // VERIFICATION DE L'INSTRUCTION ENVOYE
-    if(!regex.test(instruction)){
-      const errorMessage = "Les instructions du cocktail ne doit contenir que des lettres et des chiffres."
-      return res.status(400).render('errorPage', {errorMessage})
-    }
+      // Vérification de l'instruction envoyée
+      if (!regex.test(instruction)) {
+          const errorMessage = "Les instructions du cocktail ne doit contenir que des lettres et des chiffres."
+          return res.status(400).render('errorPage', { errorMessage });
+      }
 
-    // CONVERSION DE DEUX TABLEAUX EN JSON
-    function convertintoJSON(ingredients, quantities){
-      const associatedElements = [];
-      for (let i = 0; i < ingredients.length; i++){
-        const association = {
-          ingredient_id : ingredients[i],
-          quantity : quantities[i]
-        };
-        associatedElements.push(association);
-      };
-      const jsonObject = JSON.stringify(associatedElements);
-      return jsonObject;
-    };
+      // Conversion de deux tableaux en JSON
+      function convertintoJSON(ingredients, quantities) {
+          const associatedElements = [];
+          for (let i = 0; i < ingredients.length; i++) {
+              const association = {
+                  ingredient_id: ingredients[i],
+                  quantity: quantities[i]
+              };
+              associatedElements.push(association);
+          }
+          const jsonObject = JSON.stringify(associatedElements);
+          return jsonObject;
+      }
 
-    const ingredientJson = convertintoJSON(ingredientId, quantity);
+      const ingredientJson = convertintoJSON(ingredientId, quantity);
 
-    const {result, error} = await cocktailDataMapper.addOneCocktailFunction(name, instruction, userId, ingredientJson);
-    if(result){
-      res.redirect('/profile/usercocktails');
-    } else {
-      const errorMessage = error;
-      res.render('errorPage', {errorMessage})
+      const { result, error } = await cocktailDataMapper.addOneCocktailFunction(name, instruction, userId, ingredientJson);
+      if (result) {
+    // Informations sur l'auteur du cocktail
+        const cocktailAuthor = req.session.user; 
+        const cocktailAuthorEmail = cocktailAuthor.email;
+        const cocktailAuthorName = `${cocktailAuthor.firstname} ${cocktailAuthor.lastname}`;
+    //envoie un mail lors de proposition d'un nouveau cocktail
+        await warningNewCocktail(cocktailAuthorEmail, cocktailAuthorName);
+        res.redirect('/profile/usercocktails');
+      } else {
+          const errorMessage = error;
+          res.render('errorPage', { errorMessage });
+      }
+  } else {
+      // Si ingredientId ou quantity n'est pas un tableau
+      console.error("ingredientId ou quantity n'est pas défini ou n'est pas un tableau");
+      const errorMessage = "Les données reçues sont incorrectes.";
+      res.status(400).render('errorPage', { errorMessage });
   }
 },
 

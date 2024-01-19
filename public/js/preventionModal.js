@@ -1,7 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    // SessionStorage pour vérifier que la modale Prevention n'apparaisse qu'une seule fois
-    if (!localStorage.getItem("modalShown")){
+    // SessionStorage pour vérifier que la modale Prevention n'apparaisse qu'une seule fois.
+    // elle réapparaitra uniquement si l'utilisateur ferme son navigateur et réouvre pour revenir sur le site
+    // ==> session de navigation se vide et le modalShown sera de nouveau stocké si l'utilisateur revient.
+    if (!sessionStorage.getItem("modalShown")){
         const modalContainerPrevention = document.getElementById("prevention-modal");
         const birthYearInput = document.getElementById("birth-year");
         const checkAgeButton = document.getElementById("checkAgeButton");
@@ -36,11 +38,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 errorMessage.style.width = "200px";
             // Si + de 18ans, la personne peut profiter du site
             } else {
-                localStorage.setItem("modalShown", "true");
+                sessionStorage.setItem("modalShown", "true");
                 modalContainerPrevention.classList.toggle("active");
             }
         });
-
     }
 });
 
